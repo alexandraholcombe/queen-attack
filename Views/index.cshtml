@@ -1,13 +1,13 @@
 @{
   Layout="Shared/_Layout.cshtml";
 }
-
-<form action="/" method="post">
+<img src="~/Content/img/chessboard.png" alt="Chessboard">
+<form action="/results" method="post">
   <div class="row">
     <div class="col-md-6">
       <div class="form-group">
         <label for="qXCoord">Queen X Coordinate</label>
-        <select name="qXCoord" id="qXCoord">
+        <select name="qXCoord" id="qXCoord" class="form-control">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -20,7 +20,7 @@
       </div>
       <div class="form-group">
         <label for="qYCoord">Queen Y Coordinate</label>
-        <select name="qYCoord" id="qYCoord">
+        <select name="qYCoord" id="qYCoord" class="form-control">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -35,7 +35,7 @@
       <div class="col-md-6">
         <div class="form-group">
           <label for="pXCoord">Pawn X Coordinate</label>
-          <select name="pXCoord" id="pXCoord">
+          <select name="pXCoord" id="pXCoord" class="form-control">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -48,7 +48,7 @@
         </div>
         <div class="form-group">
           <label for="pYCoord">Pawn Y Coordinate</label>
-          <select name="pYCoord" id="pYCoord">
+          <select name="pYCoord" id="pYCoord" class="form-control">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -61,5 +61,5 @@
         </div>
       </div>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" class="btn btn-lg">Submit</button>
   </form>

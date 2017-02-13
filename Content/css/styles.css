@@ -1,0 +1,24 @@
+.jumbotron {
+  background-image: url("../img/freddie.png");
+  background-size: contain;
+  background-position: 75% 0%;
+  background-repeat: no-repeat;
+}
+.jumbotron h1 {
+  font-family: 'Alegreya SC', serif;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.col-md-6 {
+  padding: 0 20%;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+}

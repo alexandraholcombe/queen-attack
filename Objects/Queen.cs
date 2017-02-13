@@ -50,7 +50,7 @@ namespace QueenAttack.Objects
       {
         return true;
       }
-      else if (Math.Abs(pXCoord - pXCoord) == Math.Abs(qYCoord-pYCoord))
+      else if (Math.Abs(pXCoord - qXCoord) == Math.Abs(qYCoord-pYCoord))
       {
         return true;
       }
