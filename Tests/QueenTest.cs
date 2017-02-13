@@ -32,17 +32,31 @@ namespace QueenAttack.Objects
     }
 
     [Fact]
-    public void Queen_ForNESWDiagonal_true()
+    public void Queen_ForSWNEDiagonal_true()
     {
       Queen testQueen = new Queen(2,3);
       Assert.Equal(true, testQueen.CanAttack(testQueen,5,6));
     }
 
     [Fact]
-    public void Queen_ForNWSEDiagonal_true()
+    public void Queen_ForSENWDiagonal_true()
     {
       Queen testQueen = new Queen(1,6);
       Assert.Equal(true, testQueen.CanAttack(testQueen,5,2));
+    }
+
+    [Fact]
+    public void Queen_ForNESWDiagonal_true()
+    {
+      Queen testQueen = new Queen(3,6);
+      Assert.Equal(true, testQueen.CanAttack(testQueen,2,5));
+    }
+
+    [Fact]
+    public void Queen_ForNWSEDiagonal_true()
+    {
+      Queen testQueen = new Queen(8,1);
+      Assert.Equal(true, testQueen.CanAttack(testQueen,5,4));
     }
   }
 }
