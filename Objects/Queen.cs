@@ -42,6 +42,10 @@ namespace QueenAttack.Objects
       {
         return false;
       }
+      else if ((qXCoord == pXCoord) || (qYCoord == pYCoord))
+      {
+        return true;
+      }
       else
       {
         return false;

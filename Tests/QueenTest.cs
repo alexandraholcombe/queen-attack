@@ -16,5 +16,20 @@ namespace QueenAttack.Objects
       Queen testQueen = new Queen(1,1);
       Assert.Equal(false, testQueen.CanAttack(testQueen,3,2));
     }
+
+    [Fact]
+    public void Queen_ForMatchingYCoordinates_true()
+    {
+      Queen testQueen = new Queen(1,1);
+      Assert.Equal(true, testQueen.CanAttack(testQueen,8,1));
+    }
+
+    [Fact]
+    public void Queen_ForMatchingXCoordinates_true()
+    {
+      Queen testQueen = new Queen(1,1);
+      Assert.Equal(true, testQueen.CanAttack(testQueen,1,8));
+    }
+    
   }
 }
