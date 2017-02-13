@@ -46,6 +46,10 @@ namespace QueenAttack.Objects
       {
         return true;
       }
+      else if (Math.Abs(qXCoord - pXCoord) == Math.Abs(qYCoord - pYCoord))
+      {
+        return true;
+      }
       else
       {
         return false;
