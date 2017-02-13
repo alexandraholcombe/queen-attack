@@ -7,7 +7,7 @@ namespace QueenAttack.Objects
     public void Queen_ForMatchingCoordinates_false()
     {
       Queen testQueen = new Queen(1,1);
-      Assert.Equal(false, testQueen.CanAttack(1,1))
+      Assert.Equal(false, testQueen.CanAttack(testQueen,1,1));
     }
   }
 }

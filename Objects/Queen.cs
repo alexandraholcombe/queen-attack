@@ -33,10 +33,10 @@ namespace QueenAttack.Objects
       _yCoord = inputYCoord;
     }
 
-    public string CanAttack(Queen newQueen, int pXCoord, int pYCoord)
+    public bool CanAttack(Queen newQueen, int pXCoord, int pYCoord)
     {
-      qXCoord = newQueen.GetXCoord();
-      qYCoord = newQueen.GetYCoord();
+      int qXCoord = newQueen.GetXCoord();
+      int qYCoord = newQueen.GetYCoord();
 
       if ((qXCoord == pXCoord) && (qYCoord == pYCoord))
       {
@@ -44,7 +44,7 @@ namespace QueenAttack.Objects
       }
       else
       {
-        return false
+        return false;
       }
     }
   }
