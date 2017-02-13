@@ -15,9 +15,37 @@ namespace QueenAttack.Objects
       _yCoord = yCoord;
     }
 
-    public string CanAttack()
+    public int GetXCoord()
     {
-      if ()
+      return _xCoord;
+    }
+    public void SetXCoord(int inputXCoord)
+    {
+      _xCoord = inputXCoord;
+    }
+
+    public int GetYCoord()
+    {
+      return _yCoord;
+    }
+    public void SetYCoord(int inputYCoord)
+    {
+      _yCoord = inputYCoord;
+    }
+
+    public string CanAttack(Queen newQueen, int pXCoord, int pYCoord)
+    {
+      qXCoord = newQueen.GetXCoord();
+      qYCoord = newQueen.GetYCoord();
+
+      if ((qXCoord == pXCoord) && (qYCoord == pYCoord))
+      {
+        return false;
+      }
+      else
+      {
+        return false
+      }
     }
   }
 }
