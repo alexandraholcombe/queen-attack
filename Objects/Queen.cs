@@ -6,37 +6,66 @@ namespace QueenAttack.Objects
 {
   public class Queen
   {
-    private int _xCoord;
-    private int _yCoord;
+    private int _qXCoord;
+    private int _qYCoord;
+    private int _pXCoord;
+    private int _pYCoord;
 
-    public Queen(int xCoord, int yCoord)
-    {
-      _xCoord = xCoord;
-      _yCoord = yCoord;
-    }
 
-    public int GetXCoord()
+    public Queen(int qXCoord, int qYCoord, int pXCoord, int pYCoord)
     {
-      return _xCoord;
-    }
-    public void SetXCoord(int inputXCoord)
-    {
-      _xCoord = inputXCoord;
+      _qXCoord = qXCoord;
+      _qYCoord = qYCoord;
+      _pXCoord = pXCoord;
+      _pYCoord = pYCoord;
     }
 
-    public int GetYCoord()
+    public int GetQXCoord()
     {
-      return _yCoord;
+      return _qXCoord;
     }
-    public void SetYCoord(int inputYCoord)
+    public void SetQXCoord(int inputQXCoord)
     {
-      _yCoord = inputYCoord;
+      _qXCoord = inputQXCoord;
     }
 
-    public bool CanAttack(Queen newQueen, int pXCoord, int pYCoord)
+    public int GetQYCoord()
     {
-      int qXCoord = newQueen.GetXCoord();
-      int qYCoord = newQueen.GetYCoord();
+      return _qYCoord;
+    }
+    public void SetQYCoord(int inputQYCoord)
+    {
+      _qYCoord = inputQYCoord;
+    }
+
+    public int GetPXCoord()
+    {
+      return _pXCoord;
+    }
+    public void SetPXCoord(int inputPXCoord)
+    {
+      _pXCoord = inputPXCoord;
+    }
+
+    public int GetPYCoord()
+    {
+      return _pYCoord;
+    }
+    public void SetPYCoord(int inputPYCoord)
+    {
+      _pYCoord = inputPYCoord;
+    }
+
+    public bool CanAttack(Queen newQueen)
+    {
+      // if (newQueen == null)
+      // {
+      //   newQueen =
+      // }
+      int qXCoord = newQueen.GetQXCoord();
+      int qYCoord = newQueen.GetQYCoord();
+      int pXCoord = newQueen.GetPXCoord();
+      int pYCoord = newQueen.GetPYCoord();
 
       if ((qXCoord == pXCoord) && (qYCoord == pYCoord))
       {

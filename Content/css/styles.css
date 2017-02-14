@@ -4,8 +4,16 @@
   background-position: 75% 0%;
   background-repeat: no-repeat;
 }
-.jumbotron h1 {
+.jumbotron h1, .container h1 {
   font-family: 'Alegreya SC', serif;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 48px;
+}
+
+.container {
   text-align: center;
 }
 
@@ -21,4 +29,9 @@ img {
 .btn {
   display: block;
   margin: 20px auto;
+}
+
+a.btn {
+  text-align: center;
+  display: inline-block;
 }
